@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XBZ Prime TV - Watch 520+ Live TV Channels Free. Sports, News, Movies, Entertainment. No Subscription Required. HD Quality Streaming.">
+    <meta name="keywords" content="XBZ Prime TV, free live tv, sports streaming, live channels, Bangladesh TV, free iptv, android tv app">
+    <meta name="author" content="XBZ Prime TV">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xbzprime.tv/">
+    <meta property="og:title" content="XBZ Prime TV - 520+ Live TV Channels Free">
+    <meta property="og:description" content="Watch Sports, News, Movies & Entertainment Live. Anytime • Anywhere • Absolutely Free">
+    <meta property="og:image" content="https://xbzprime.tv/assets/screenshots/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://xbzprime.tv/">
+    <meta property="twitter:title" content="XBZ Prime TV - 520+ Live TV Channels Free">
+    <meta property="twitter:description" content="Watch Sports, News, Movies & Entertainment Live. Anytime • Anywhere • Absolutely Free">
+    <meta property="twitter:image" content="https://xbzprime.tv/assets/screenshots/og-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://xbzprime.tv/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <title>XBZ Prime TV - Watch 520+ Live TV Channels Free | Sports, News, Movies</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "XBZ Prime TV",
+        "operatingSystem": "ANDROID",
+        "applicationCategory": "EntertainmentApplication",
+        "description": "Watch 520+ Live TV Channels Free. Sports, News, Movies, Entertainment.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "12547"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                    <circle cx="40" cy="40" r="35" fill="none" stroke="#E50914" stroke-width="3" stroke-dasharray="220" stroke-dashoffset="220">
+                        <animate attributeName="stroke-dashoffset" from="220" to="0" dur="1.5s" fill="freeze"/>
+                    </circle>
+                    <text x="40" y="48" text-anchor="middle" fill="#E50914" font-size="20" font-weight="bold">XBZ</text>
+                </svg>
+            </div>
+            <div class="preloader-text">Loading XBZ Prime TV...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Netflix-style Hero Background -->
+    <div class="hero-background">
+        <div class="hero-gradient"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="logo">
+                        <div class="logo-netflix-style">
+                            <span class="logo-xbz">XBZ</span>
+                            <span class="logo-divider">|</span>
+                            <span class="logo-prime">PRIME TV</span>
+                        </div>
+                    </a>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#features" class="nav-link">Features</a></li>
+                        <li><a href="#channels" class="nav-link">Channels</a></li>
+                        <li><a href="#categories" class="nav-link">Categories</a></li>
+                        <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+                        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#download" class="nav-link">Download</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <div class="nav-search">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" placeholder="Search channels..." id="navSearch" class="search-input">
+                        </div>
+                        <a href="#download" class="btn btn-netflix btn-sm">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="hero-badge">
+                            <span class="live-dot"></span>
+                            <span>LIVE NOW</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            Unlimited <span class="netflix-red">Live TV</span><br>
+                            <span class="hero-title-sub">100% Free. No Subscription.</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Watch 520+ premium live TV channels including sports, news, movies and entertainment. 
+                            Stream anywhere, anytime in HD quality.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-netflix btn-lg magnetic-btn">
+                                <i class="fas fa-play"></i>
+                                <span>Watch Now</span>
+                            </a>
+                            <a href="#" class="btn btn-netflix-dark btn-lg magnetic-btn">
+                                <i class="fas fa-info-circle"></i>
+                                <span>More Info</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                <span class="stat-number counter" data-target="520">0</span>
+                                <span class="stat-plus">+</span>
+                                <span class="stat-label">TV Channels</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                                <span class="stat-number counter" data-target="100">0</span>
+                                <span class="stat-plus">+</span>
+                                <span class="stat-label">Sports Channels</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Live Streaming</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="phone-mockup-wrapper">
+                            <div class="phone-mockup">
+                                <div class="phone-frame">
+                                    <div class="phone-notch"></div>
+                                    <div class="phone-screen">
+                                        <div class="swiper phoneSwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="phone-slide-content">
+                                                        <img src="assets/screenshots/screenshot-1.jpg" alt="XBZ Prime TV Home" onerror="this.style.display='none'; this.parentElement.querySelector('.phone-fallback').style.display='flex';">
+                                                        <div class="phone-fallback" style="display:none;">
+                                                            <div class="fallback-channel">
+                                                                <i class="fas fa-futbol"></i>
+                                                                <span>LIVE SPORTS</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="phone-slide-content">
+                                                        <img src="assets/screenshots/screenshot-2.jpg" alt="Live Channels" onerror="this.style.display='none'; this.parentElement.querySelector('.phone-fallback').style.display='flex';">
+                                                        <div class="phone-fallback" style="display:none;">
+                                                            <div class="fallback-channel">
+                                                                <i class="fas fa-tv"></i>
+                                                                <span>HD CHANNELS</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="phone-slide-content">
+                                                        <img src="assets/screenshots/screenshot-3.jpg" alt="Sports Streaming" onerror="this.style.display='none'; this.parentElement.querySelector('.phone-fallback').style.display='flex';">
+                                                        <div class="phone-fallback" style="display:none;">
+                                                            <div class="fallback-channel">
+                                                                <i class="fas fa-film"></i>
+                                                                <span>MOVIES 24/7</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-reflection"></div>
+                                <div class="phone-glow"></div>
+                            </div>
+                            
+                            <!-- Floating Cards -->
+                            <div class="floating-cards">
+                                <div class="float-card fc-1">
+                                    <img src="assets/icons/channels/sports-preview.jpg" alt="Sports" onerror="this.style.display='none'">
+                                    <div class="fc-content">
+                                        <span class="fc-live">LIVE</span>
+                                        <span>Cricket World Cup</span>
+                                    </div>
+                                </div>
+                                <div class="float-card fc-2">
+                                    <img src="assets/icons/channels/movie-preview.jpg" alt="Movie" onerror="this.style.display='none'">
+                                    <div class="fc-content">
+                                        <span class="fc-new">NEW</span>
+                                        <span>Blockbuster Movie</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Row (Netflix Style Horizontal Scroll) -->
+        <section class="category-row">
+            <div class="container">
+                <h3 class="row-title">🔥 Trending Now</h3>
+                <div class="row-slider">
+                    <div class="row-track">
+                        <div class="row-item">
+                            <div class="row-item-img">
+                                <span class="row-item-number">1</span>
+                                <img src="assets/screenshots/trend-1.jpg" alt="Trending 1" onerror="this.style.display='none'">
+                            </div>
+                            <span class="row-item-title">IPL Live</span>
+                        </div>
+                        <div class="row-item">
+                            <div class="row-item-img">
+                                <span class="row-item-number">2</span>
+                                <img src="assets/screenshots/trend-2.jpg" alt="Trending 2" onerror="this.style.display='none'">
+                            </div>
+                            <span class="row-item-title">FIFA World Cup</span>
+                        </div>
+                        <div class="row-item">
+                            <div class="row-item-img">
+                                <span class="row-item-number">3</span>
+                                <img src="assets/screenshots/trend-3.jpg" alt="Trending 3" onerror="this.style.display='none'">
+                            </div>
+                            <span class="row-item-title">Breaking News</span>
+                        </div>
+                        <div class="row-item">
+                            <div class="row-item-img">
+                                <span class="row-item-number">4</span>
+                                <img src="assets/screenshots/trend-4.jpg" alt="Trending 4" onerror="this.style.display='none'">
+                            </div>
+                            <span class="row-item-title">Movie Premier</span>
+                        </div>
+                        <div class="row-item">
+                            <div class="row-item-img">
+                                <span class="row-item-number">5</span>
+                                <img src="assets/screenshots/trend-5.jpg" alt="Trending 5" onerror="this.style.display='none'">
+                            </div>
+                            <span class="row-item-title">Music Awards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Why <span class="netflix-red">XBZ Prime TV</span>?</h2>
+                    <p class="section-description">Everything you need for the ultimate free streaming experience</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>520+ Channels</h3>
+                        <p>Hundreds of live TV channels from across the globe</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="feature-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3>Live Sports</h3>
+                        <p>Never miss cricket, football, tennis or any sport</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>News 24/7</h3>
+                        <p>Stay updated with breaking news worldwide</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="feature-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Movies</h3>
+                        <p>Enjoy movies and shows anytime</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Music</h3>
+                        <p>Stream music channels in premium quality</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                        <div class="feature-icon">
+                            <i class="fas fa-hd"></i>
+                        </div>
+                        <h3>HD Quality</h3>
+                        <p>Crystal clear HD streaming experience</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Favorites</h3>
+                        <p>Save channels to your favorites list</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safe & Secure</h3>
+                        <p>Protected streaming experience</p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Fast Servers</h3>
+                        <p>Lightning-fast channel switching</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Channels (Netflix Style Row) -->
+        <section class="channels" id="channels">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Popular <span class="netflix-red">Channels</span></h2>
+                </div>
+                
+                <!-- Sports Row -->
+                <h3 class="row-title"><i class="fas fa-futbol"></i> Sports Channels</h3>
+                <div class="channels-grid">
+                    <div class="channel-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="channel-logo">
+                            <img src="assets/icons/channels/sony-sports.png" alt="Sony Sports" onerror="this.style.display='none'">
+                            <span class="channel-fallback">SONY</span>
+                        </div>
+                        <span>Sony Sports</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="channel-logo">
+                            <img src="assets/icons/channels/star-sports.png" alt="Star Sports" onerror="this.style.display='none'">
+                            <span class="channel-fallback">STAR</span>
+                        </div>
+                        <span>Star Sports</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="channel-logo">
+                            <img src="assets/icons/channels/t-sports.png" alt="T Sports" onerror="this.style.display='none'">
+                            <span class="channel-fallback">TSP</span>
+                        </div>
+                        <span>T Sports</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="channel-logo">
+                            <img src="assets/icons/channels/espn.png" alt="ESPN" onerror="this.style.display='none'">
+                            <span class="channel-fallback">ESPN</span>
+                        </div>
+                        <span>ESPN</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="channel-logo">
+                            <img src="assets/icons/channels/fox-sports.png" alt="Fox Sports" onerror="this.style.display='none'">
+                            <span class="channel-fallback">FOX</span>
+                        </div>
+                        <span>Fox Sports</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="channel-logo">
+                            <img src="assets/icons/channels/sky-sports.png" alt="Sky Sports" onerror="this.style.display='none'">
+                            <span class="channel-fallback">SKY</span>
+                        </div>
+                        <span>Sky Sports</span>
+                    </div>
+                </div>
+                
+                <!-- News Row -->
+                <h3 class="row-title"><i class="fas fa-newspaper"></i> News Channels</h3>
+                <div class="channels-grid">
+                    <div class="channel-card" data-aos="zoom-in">
+                        <div class="channel-logo">
+                            <span class="channel-fallback">CNN</span>
+                        </div>
+                        <span>CNN</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in">
+                        <div class="channel-logo">
+                            <span class="channel-fallback">BBC</span>
+                        </div>
+                        <span>BBC News</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in">
+                        <div class="channel-logo">
+                            <span class="channel-fallback">AJ</span>
+                        </div>
+                        <span>Al Jazeera</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in">
+                        <div class="channel-logo">
+                            <span class="channel-fallback">STV</span>
+                        </div>
+                        <span>Somoy TV</span>
+                    </div>
+                    <div class="channel-card" data-aos="zoom-in">
+                        <div class="channel-logo">
+                            <span class="channel-fallback">JTV</span>
+                        </div>
+                        <span>Jamuna TV</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories" id="categories">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Browse <span class="netflix-red">Categories</span></h2>
+                </div>
+                
+                <div class="categories-grid">
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-img">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Sports</h3>
+                            <span>100+ Channels</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="category-img">
+                            <i class="fas fa-laugh"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Entertainment</h3>
+                            <span>85+ Channels</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-img">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Kids</h3>
+                            <span>40+ Channels</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="category-img">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Movies</h3>
+                            <span>45+ Channels</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-img">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3>News</h3>
+                            <span>50+ Channels</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="350">
+                        <div class="category-img">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Music</h3>
+                            <span>35+ Channels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose">
+            <div class="container">
+                <div class="why-choose-grid">
+                    <div class="why-choose-content" data-aos="fade-right">
+                        <h2 class="section-title">The Ultimate <span class="netflix-red">Free</span> Streaming App</h2>
+                        <ul class="checklist">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>100% Free Forever</strong>
+                                    <p>No tricks, no trials, no credit card needed</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>No Account Required</strong>
+                                    <p>Start watching instantly without registration</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Premium HD Quality</strong>
+                                    <p>Crystal clear streaming on all channels</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Daily Updates</strong>
+                                    <p>Fresh content and new channels added regularly</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Light & Fast</strong>
+                                    <p>Small app size with lightning-fast performance</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="why-choose-visual" data-aos="fade-left">
+                        <div class="tv-mockup">
+                            <div class="tv-screen">
+                                <div class="tv-content">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span>Playing Now: Live Sports</span>
+                                </div>
+                            </div>
+                            <div class="tv-stand"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Gallery -->
+        <section class="screenshots" id="screenshots">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">App <span class="netflix-red">Screenshots</span></h2>
+                </div>
+                
+                <div class="screenshots-gallery">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="assets/screenshots/screenshot-1.jpg" alt="Home Screen" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22600%22><rect fill=%22%23141414%22 width=%22300%22 height=%22600%22/><text fill=%22%23E50914%22 x=%22150%22 y=%22300%22 text-anchor=%22middle%22 font-size=%2220%22>Home Screen</text></svg>'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="assets/screenshots/screenshot-2.jpg" alt="Live TV" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22600%22><rect fill=%22%23141414%22 width=%22300%22 height=%22600%22/><text fill=%22%23E50914%22 x=%22150%22 y=%22300%22 text-anchor=%22middle%22 font-size=%2220%22>Live TV</text></svg>'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="assets/screenshots/screenshot-3.jpg" alt="Sports" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22600%22><rect fill=%22%23141414%22 width=%22300%22 height=%22600%22/><text fill=%22%23E50914%22 x=%22150%22 y=%22300%22 text-anchor=%22middle%22 font-size=%2220%22>Sports</text></svg>'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="assets/screenshots/screenshot-4.jpg" alt="Categories" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22600%22><rect fill=%22%23141414%22 width=%22300%22 height=%22600%22/><text fill=%22%23E50914%22 x=%22150%22 y=%22300%22 text-anchor=%22middle%22 font-size=%2220%22>Categories</text></svg>'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lightbox -->
+                <div class="lightbox" id="lightbox">
+                    <span class="lightbox-close">&times;</span>
+                    <img class="lightbox-content" id="lightboxImg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="stat-value counter" data-target="520">0</span>
+                        <span class="stat-label">Live Channels</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stat-value counter" data-target="150">0</span>
+                        <span class="stat-label">Sports Events Daily</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <span class="stat-value counter" data-target="100">0</span>
+                        <span class="stat-label">K+ Downloads</span>
+                    </div>
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                        <span class="stat-value">99.9<span class="stat-suffix">%</span></span>
+                        <span class="stat-label">Server Uptime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Reviews -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">What Users <span class="netflix-red">Say</span></h2>
+                </div>
+                
+                <div class="swiper reviewSwiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                <p>"Best free TV app! All sports channels work perfectly. Better than paid apps!"</p>
+                                <div class="review-author">
+                                    <div class="review-avatar">R</div>
+                                    <div>
+                                        <strong>Rafi Ahmed</strong>
+                                        <span>🇧🇩 Bangladesh</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                <p>"Watch all PSL matches for free. Amazing streaming quality!"</p>
+                                <div class="review-author">
+                                    <div class="review-avatar">A</div>
+                                    <div>
+                                        <strong>Amir Khan</strong>
+                                        <span>🇵🇰 Pakistan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                <p>"Crystal clear HD. No buffering. This app is a game changer!"</p>
+                                <div class="review-author">
+                                    <div class="review-avatar">P</div>
+                                    <div>
+                                        <strong>Priya Sharma</strong>
+                                        <span>🇮🇳 India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Frequently Asked <span class="netflix-red">Questions</span></h2>
+                </div>
+                
+                <div class="faq-list" data-aos="fade-up">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Is XBZ Prime TV really free?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! 100% free forever. No subscription, no hidden charges, no credit card required.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do I need to create an account?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No registration or login needed. Just install and start watching immediately.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can I watch live sports?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! 100+ sports channels covering cricket, football, tennis, and more.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What devices are supported?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Android phones, tablets, Android TV, Google TV, and Chromecast. Android 5.0+ required.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Is HD quality available?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! Most channels stream in HD quality with adaptive bitrate for smooth playback.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download CTA -->
+        <section class="download" id="download">
+            <div class="container">
+                <div class="download-card" data-aos="fade-up">
+                    <div class="download-content">
+                        <h2>Ready to Watch <span class="netflix-red">Free Live TV</span>?</h2>
+                        <p>Join millions of users streaming 520+ channels for free!</p>
+                        
+                        <div class="download-buttons">
+                            <a href="#" class="btn btn-netflix btn-xl magnetic-btn">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <small>GET IT ON</small>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="btn btn-netflix-dark btn-xl magnetic-btn">
+                                <i class="fas fa-download"></i>
+                                <div>
+                                    <small>Direct Download</small>
+                                    <strong>APK File</strong>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="download-meta">
+                            <span>Version 2.0</span>
+                            <span>•</span>
+                            <span>15 MB</span>
+                            <span>•</span>
+                            <span>Android 5.0+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="logo-xbz">XBZ</span>
+                        <span class="logo-prime">PRIME TV</span>
+                    </div>
+                    <p>Your ultimate destination for free live TV streaming. Watch 520+ channels from around the world without any subscription.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#channels">Channels</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms of Service</a></li>
+                        <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="pages/contact.html">Help Center</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Suggest Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 XBZ Prime TV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Floating Download -->
+    <div class="floating-download" id="floatingDownload">
+        <a href="#" class="btn btn-netflix">
+            <i class="fas fa-download"></i> Download Free
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
